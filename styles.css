@@ -1,0 +1,147 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+}
+
+
+#game-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+    position: relative;
+    background-size: cover;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    position: relative;
+    z-index: 0;
+}
+
+html, body, #game-container {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+
+.body,
+.wrapper {
+    /* Break the flow */
+    position: absolute;
+    top: 0px;
+
+    /* Give them all the available space */
+    width: 100%;
+    height: 100%;
+
+    /* Remove the margins if any */
+    margin: 0;
+
+    /* Allow them to scroll down the document */
+    overflow: hidden;
+}
+
+.body {
+    /* Sending body at the bottom of the stack */
+    z-index: 1;
+}
+
+.wrapper {
+    /* Making the wrapper stack above the body */
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.leaflet-container {
+    width: 400px;
+    height: 200px;
+    margin: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.landmark-question-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.landmark-image-famous {
+    margin: 0.5rem;
+    max-width: 200px;
+    border-radius: 0.25rem;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.landmark-choices {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.landmark-choice {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.landmark-choice img {
+    border-radius: 0.25rem;
+    max-width: 200px;
+    margin-top: auto;
+    margin-bottom: 1em;
+    max-height: 200px;
+    object-fit: contain;
+    transition: transform 0.25s linear, box-shadow 0.25s linear;
+    cursor: pointer;
+}
+.landmark-choice-nointeract img {
+    cursor: default;
+}
+.landmark-choice:not(.landmark-choice-nointeract) img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.11);
+}
+.landmark-question-header {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    align-items:  center;
+    flex-direction: column;
+}
+
+h1 {
+    padding: 0 1rem;
+}
+
+.landmark-description {
+    max-width: 600px;
+}
