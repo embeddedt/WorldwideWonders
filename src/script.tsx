@@ -17,7 +17,7 @@ interface Question {
 const landmarkQuestions: Question[] = [
     {
         countryName: "Australia",
-        description: `Australia is the sixth biggest country in the world by land area. 25 million people live in Australia, and about 85% of them live near the east coast. Australia is known for its mining (coal, iron, gold, diamonds and crystals), its production of wool, and as the world's largest producer of bauxite.`,
+        description: `Australia is the sixth biggest country in the world by land area. 25 million people live in Australia, and about 85% of them live near the east coast. Australia is known for its mining (coal, iron, gold, diamonds, and crystals), for its production of wool, and as the world's largest producer of bauxite.`,
         location: [-25.3456376,131.0283911],
         famousLandmark: "sydney_opera_house.jpg",
         unknownLandmark: { name: 'Uluru', src: 'uluru.jpg' }
@@ -31,7 +31,7 @@ const landmarkQuestions: Question[] = [
     },
     {
         countryName: "Kansas",
-        description: `Kansas is a state in the United States. It is known for the Dust Bowl, a period of time from 1930 to 1936 where there was little rainfall and high temperatures. Kansas has also been popularized by the line, "We're not in Kansas anymore" spoken by Dorothy in the Wizard of Oz.`,
+        description: `Kansas is a state in the United States. It is known for the Dust Bowl, a period of time from 1930 to 1936 where there was little rainfall and high temperatures. Kansas has also been popularized by the line, "We're not in Kansas anymore," spoken by Dorothy in the Wizard of Oz.`,
         location: [38.7267878,-98.032701],
         famousLandmark: 'wizardofoz.jpg',
         unknownLandmark: { name: 'Mushroom Rock', src: 'mushroomrock.jpg' },
@@ -53,7 +53,7 @@ const landmarkQuestions: Question[] = [
     },
     {
         countryName: 'Wiltshire',
-        description: 'Wiltshire is a county in South West England with an area of 3,485 km2 (1,346 square miles). Wiltshire is characterised by its high downland and wide valleys.',
+        description: 'Wiltshire is a county in Southwest England with an area of 3,485 square kilometers (1,346 square miles). Wiltshire is characterised by its high downland and wide valleys.',
         location: [51.1788853,-1.8284037],
         famousLandmark: 'bigben.jpg',
         unknownLandmark: { name: 'Stonehenge', src: 'stonehenge.jpg' },
@@ -151,7 +151,7 @@ const landmarkQuestions: Question[] = [
     },
     {
         countryName: "Dover",
-        description: "Dover is a town and major ferry port in Kent, South East England. It faces France across the Strait of Dover, the narrowest part of the English Channel at 33 kilometres (21 mi) from Cap Gris Nez in France.",
+        description: "Dover is a town and major ferry port in Kent, Southeast England. It faces France across the Strait of Dover, the narrowest part of the English Channel at 33 kilometres (21 mi) from Cap Gris Nez in France.",
         famousLandmark: 'doverstreet.jpeg',
         unknownLandmark: { name: 'White Cliffs', src: 'whitecliffs.jpg' },
         location: [51.1200879,1.2713195]

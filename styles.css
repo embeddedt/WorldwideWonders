@@ -77,8 +77,10 @@ html, body, #game-container {
 }
 
 .leaflet-container {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     height: 200px;
+    padding: 0 1rem;
     margin: 0.5rem;
     border-radius: 0.25rem;
 }
@@ -87,6 +89,7 @@ html, body, #game-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -144,4 +147,5 @@ h1 {
 
 .landmark-description {
     max-width: 600px;
+    padding: 0 1rem;
 }
